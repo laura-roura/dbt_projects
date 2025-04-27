@@ -17,9 +17,20 @@ models:
         tests:
           - value_check
 
+  - name: customer
+    description: "DBT Model for customer table"
+
+  - name: customer_vw
+    description: "DBT Model for customer view"
+
 sources:
   - name: employee
     database: DBT_DB
     schema: PUBLIC
     tables:
       - name: EMPLOYEE_RAW
+  - name: customer
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: CUSTOMER_SRC
