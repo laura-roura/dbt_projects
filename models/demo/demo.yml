@@ -20,6 +20,9 @@ models:
   - name: customer
     description: "DBT Model for customer table"
 
+  - name: customer_vw
+    description: "DBT Model for customer view"
+
 sources:
   - name: employee
     database: DBT_DB
